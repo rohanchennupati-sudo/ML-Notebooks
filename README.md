@@ -2,7 +2,8 @@
 
 My notebooks from the Machine Learning Practice (MLP) course, cleaned up and reorganised. The original
 course colabs were scattered across about 45 files with a fair amount of overlap, so related ones are merged here
-and the code updated for current versions of scikit-learn and pandas. Every notebook runs top to bottom.
+and the code updated for current versions of scikit-learn and pandas. The notebooks are meant to run top to
+bottom; the exceptions are noted below.
 
 Most of it is scikit-learn on small classic datasets (California housing, MNIST, iris, abalone, wine
 quality, 20 newsgroups, SMS spam). Notebook 00 is a walkthrough of a whole project and a good place to start.
@@ -11,7 +12,7 @@ quality, 20 newsgroups, SMS spam). Notebook 00 is a walkthrough of a whole proje
 
 | # | Notebook | Topics | |
 |---|---|---|---|
-| 00 | [End-to-end ML project](notebooks/00_end_to_end_ml_project.ipynb) | the full workflow on California housing: framing, EDA, pipeline, model selection, tuning, test set | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rohanchennupati-sudo/ML-Notebooks/blob/main/notebooks/00_end_to_end_ml_project.ipynb) |
+| 00 | [End-to-end ML project](notebooks/00_end_to_end_ml_project.ipynb) | the full workflow on red wine quality: framing, EDA, pipeline, model selection, tuning, test set | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rohanchennupati-sudo/ML-Notebooks/blob/main/notebooks/00_end_to_end_ml_project.ipynb) |
 | 01 | [Pandas basics](notebooks/01_pandas_basics.ipynb) | Series/DataFrames, selection, groupby, merge, reshaping | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rohanchennupati-sudo/ML-Notebooks/blob/main/notebooks/01_pandas_basics.ipynb) |
 | 02 | [sklearn API and datasets](notebooks/02_sklearn_api_and_datasets.ipynb) | estimators/transformers/predictors, loaders, fetchers, generators | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rohanchennupati-sudo/ML-Notebooks/blob/main/notebooks/02_sklearn_api_and_datasets.ipynb) |
 | 03 | [Data preprocessing](notebooks/03_data_preprocessing.ipynb) | imputation (simple, KNN), scaling, encoding, binning, imbalanced data | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rohanchennupati-sudo/ML-Notebooks/blob/main/notebooks/03_data_preprocessing.ipynb) |
@@ -53,6 +54,11 @@ Datasets are downloaded on first use (sklearn fetchers, OpenML, UCI). Two need a
   unzipped into `dataset/` (instructions in the notebook)
 
 Some notebooks (MNIST with SVMs, boosting, neural networks) take a few minutes to run on a laptop.
+
+A few saved outputs come from earlier Colab runs rather than the latest one: the dataset fetchers in
+notebook 02, the 20 newsgroups sections of notebooks 12 and 19, and the cats vs dogs results in notebook 21
+(a 500 + 500 image sample of the same Dogs vs Cats data). Re-running them will give very similar but not
+identical numbers.
 
 ## Notes
 
