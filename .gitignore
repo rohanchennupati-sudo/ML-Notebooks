@@ -1,0 +1,14 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
+*.csv
+!data/*.csv
+
+# downloaded data
+SMSSpamCollection
+sms+spam+collection.zip
+dataset/
+archive.zip
